@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Data Entry Form</title>
+</head>
+<body>
+    <h1 style="text-align: center;">User Information Form</h1>
+    <form action="/submit" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="first-name">First Name:</label><br>
+            <input type="text" id="first-name" name="first_name" required><br><br>
+
+            <label for="last-name">Last Name:</label><br>
+            <input type="text" id="last-name" name="last_name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="1" max="100" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Address Details</legend>
+            <label for="street">Street Address:</label><br>
+            <input type="text" id="street" name="street" required><br><br>
+
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="state">State/Province:</label><br>
+            <input type="text" id="state" name="state" required><br><br>
+
+            <label for="zip">ZIP/Postal Code:</label><br>
+            <input type="text" id="zip" name="zip" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer-not-say">Prefer not to say</option>
+            </select><br><br>
+
+            <label for="comments">Comments or Feedback:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
